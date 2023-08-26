@@ -39,22 +39,20 @@ public class FlushHandCounter {
 			}
 			System.out.println(flushCount);
 		}
-		//CRUD update step
-		
+		// CRUD update step
+
 		if (flushCount.containsKey("Rita Repulsa")) {
-			
+
 			int ritaCount = flushCount.get("Rita Repulsa");
-			
+
 			flushCount.put("Zordon", ritaCount);
 			flushCount.remove("Rita Repulsa");
 		}
 		System.out.println(flushCount);
-		//CRUD delete step
+		// CRUD delete step
 		flushCount.remove("He Man");
 		System.out.println(flushCount);
 
-
 	}
-	
 
 }
